@@ -5,12 +5,14 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Merriweather', serif;
 }
 
 body{
     background-color: red;
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', serif;
 }
 
 html{
@@ -26,6 +28,68 @@ header{
     grid-column: 1/ span 12;
     display: flex;
    flex-direction: column;
+   padding: 0 10%;
+   width: 100%;
+}
+
+
+/*Navbar styling*/
+
+
+.desktop_navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop_navbar ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.desktop_navbar ul li a{
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-weight: 900    ;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0.5rem 1rem;
+    /* border: 1px solid white;  */
+    border-radius: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 20px 20px 100px 10px red;
+    
+}
+
+.desktop_navbar ul li a:hover{
+    box-shadow: 20px 20px 100px 10px white inset;
+    color: red;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.desktop_navbar ul li a:focus{
+    background-color: white;
+    color: red;   
+}
+
+.desktop_navbar ul li a:link{
+   
+    color: white;   
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav{
+    margin: 0;
 }
 
 
@@ -41,3 +105,6 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+
+
